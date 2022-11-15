@@ -161,14 +161,14 @@ const SamplePage = () => {
                     <Grid item xs={12}>
                         <MainCard title="Annotaions">
 
-                            {redux_annotation_value.map((redux_annotation_each) =>
+                            {redux_annotation_value.map((redux_annotation_each,index) =>
                                 
                                 <>
                                     
                                     <Typography variant='h4'> Value:</Typography>
                                     <Typography variant='h7'>{redux_annotation_each}</Typography><br></br>
                                     <Typography variant='h4'>Description:</Typography>
-                                    <Typography variant='h7'>{redux_annotation_desc[0]}</Typography>
+                                    <Typography variant='h7'>{redux_annotation_desc[index]}</Typography>
                                    
                                 </>
                             )
